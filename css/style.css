@@ -6,7 +6,7 @@ html{
 p{
   font-size:14pt;
   font-weight: 300;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 /* === HEADER === */
@@ -29,6 +29,7 @@ header div{
 }
 nav{
   height: 64px;
+  z-index: 999;
 }
 nav a{
   color: #fff;
@@ -132,4 +133,48 @@ section>div{
   padding-bottom: 4em;
   margin: 0 auto;
   max-width:840px;
+}
+
+/* === Pepi Framework === */
+.ps_row {
+  position: relative;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.ps_row::after, .ps_row::before {
+  content: " ";
+  display: table;
+}
+.ps_row::after {clear: both;}
+div[class*="ps_col-"]{
+  float:left;
+  position: relative;
+  min-height: 1px;
+}
+div[class*="ps_col-sm-"]{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+div[class*="ps_col-md-"]{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+div[class*="ps_col-lg-"]{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media (min-width:768px) {
+  div[class*="ps_col-"][class*="-12"]{width: 100%;}
+  div[class*="ps_col-"][class*="-11"]{width: calc( (11/12) * 100%);}
+  div[class*="ps_col-"][class*="-10"]{width: calc( (10/12) * 100%);}
+  div[class*="ps_col-"][class*="-9"]{width: calc( (9/12) * 100%);}
+  div[class*="ps_col-"][class*="-8"]{width: calc( (8/12) * 100%);}
+  div[class*="ps_col-"][class*="-7"]{width: calc( (7/12) * 100%);}
+  div[class*="ps_col-"][class*="-6"]{width: calc( (6/12) * 100%);}
+  div[class*="ps_col-"][class*="-5"]{width: calc( (5/12) * 100%);}
+  div[class*="ps_col-"][class*="-4"]{width: calc( (4/12) * 100%);}
+  div[class*="ps_col-"][class*="-3"]{width: calc( (3/12) * 100%);}
+  div[class*="ps_col-"][class*="-2"]{width: calc( (2/12) * 100%);}
+  /*div[class*="ps_col-"][class*="-1"]{width: calc( (1/12) * 100%);}*/
 }
