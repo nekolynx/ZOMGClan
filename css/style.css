@@ -204,8 +204,10 @@ section#contact{background:#333;color:azure;}
   justify-content:center;
 }
 .ps_row::after, .ps_row::before {
-  content: " ";
+  /*
+  content: '';
   display: table;
+  */
 }
 .ps_row::after {clear: both;}
 div[class*="ps_col-"]{
@@ -225,8 +227,8 @@ div[class*="ps_col-lg-"]{
   padding-left: 50px;
   padding-right: 50px;
 }
+div[class*="ps_col-"][class*="-12"]{width: 100%;}
 @media (min-width:768px) {
-  div[class*="ps_col-"][class*="-12"]{width: 100%;}
   div[class*="ps_col-"][class*="-11"]{width: calc( (11/12) * 100%);}
   div[class*="ps_col-"][class*="-10"]{width: calc( (10/12) * 100%);}
   div[class*="ps_col-"][class*="-9"]{width: calc( (9/12) * 100%);}
