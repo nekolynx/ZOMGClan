@@ -20,6 +20,8 @@ header{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: -1;
 }
 header div{
   width:200px;
@@ -27,9 +29,23 @@ header div{
   margin: 0 auto;
   text-align:center;
 }
+header .background{
+  width:100%;
+  height:100%;
+  background: url('../img/Hero.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.05;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
 nav{
   height: 64px;
-  z-index: 999;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 14px 80px rgba(255,255,255,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 nav a{
   color: #fff;
@@ -64,6 +80,7 @@ li#logo{
   position:fixed;
   top:0;
   width:100%;
+  z-index: 999;
 }
 .sticky + section{
   padding-top:64px;
@@ -133,6 +150,8 @@ section>div{
   padding-bottom: 4em;
   margin: 0 auto;
   max-width:840px;
+}
+section:first-of-type{
 }
 
 /* === Pepi Framework === */
