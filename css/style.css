@@ -3,6 +3,11 @@ html{
   font-family: sans-serif;
   box-sizing: border-box;
 }
+p{
+  font-size:14pt;
+  font-weight: 300;
+  line-height: 1.5em;
+}
 
 /* === HEADER === */
 header,nav{
@@ -117,6 +122,10 @@ li#logo{
 section{
   padding-left:2.5em;
   padding-right:2.5em;
+}
+section:nth-of-type(even){
+  background:#A62122;
+  color:#fff;
 }
 section>div{
   padding-top: 4em;
