@@ -1,0 +1,126 @@
+*{box-sizing: border-box;}
+html{
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* === HEADER === */
+header,nav{
+  background-color:#A62122;
+  color: #fff;
+}
+header{
+  height:calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header div{
+  width:200px;
+  height:235px;
+  margin: 0 auto;
+  text-align:center;
+}
+nav{
+  height: 64px;
+}
+nav a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav ul{
+  height: 100%;
+  max-width:840px;
+  margin:0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+nav li{
+  text-align: center;
+  font-size: 9pt;
+  line-height: 0.95em;
+}
+.navitem{
+  margin:0 25px;
+}
+li#logo{
+  transition: all 200ms ease;
+  width: 0px;
+  line-height:0;
+  font-size:0;
+}
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.sticky + section{
+  padding-top:64px;
+}
+.sticky li#logo{
+  width:50px;
+}
+
+.mobilelogo{
+  display: none;
+  height:50px;
+  margin:7px;
+  left: -100px;
+  position: relative;
+  transition: left 200ms ease;
+}
+.sticky .mobilelogo{left:0;}
+
+#burger{
+  display:none;
+  cursor:pointer;
+  font-size: 20px;
+  margin: 20px;
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  #burger, .mobilelogo{display:inline-block;}
+  li#logo{display:none;}
+  nav ul{
+    position:fixed;
+    flex-direction: column;
+    width:100%;
+    left:0;
+    top:0;
+    background-color:rgba(166, 33, 34, 0.93);
+    transition: height 0.5s, visibility 0s, opacity 0s;
+    visibility: hidden;
+    opacity: 0;
+    height:0;
+  }
+  nav ul.active{
+    visibility: visible;
+    opacity: 1;
+    height:100%;
+  }
+  nav li {
+    font-weight: bold;
+    font-size: 18pt;
+    line-height: 1.7em;
+    transition: 0.3s;
+  }
+  nav a{text-transform: capitalize;}
+}
+
+/* === BODY === */
+section{
+  padding-left:2.5em;
+  padding-right:2.5em;
+}
+section>div{
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin: 0 auto;
+  max-width:840px;
+}

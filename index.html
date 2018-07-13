@@ -1,1 +1,103 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ZOMG Clan</title>
+	<meta name="description" content="Stick Together, Team" />
+	<meta name="theme-color" content="#A62122">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+<header>
+	<div>
+		<img src="img/ZOMG-Icon.svg">
+		<img title="ZOMG Clan" src="img/ZOMG-typelogo.svg" style="width:64%;margin-top:-25px;">
+	</div>
+	<h1 style="text-align:center;">Stick Together, Team</h1>
+</header>
+<nav id="navbar">
+	<span class="mobilelogo">
+		<img src="img/ZOMG-Icon.svg" height="50px">
+	</span>
+	<ul id="navlist" style="list-style-type: none;">
+		<li class="navitem"><a href="#about" onclick="closeNav()">Who We Are</a></li>
+		<li class="navitem"><a href="#work" onclick="closeNav()">Our Work</a></li>
+		<li id="logo"><img src="img/ZOMG-Icon.svg"></li>
+		<li class="navitem"><a href="#history" onclick="closeNav()">Our History</a></li>
+		<li class="navitem"><a href="#contact" onclick="closeNav()">Get In Touch</a></li>
+	</ul>
+	<i id="burger" class="fas fa-bars" onclick="openNav()"></i>
+</nav>
+<section id="about">
+	<div>
+	<h2>About Us</h2>
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus tellus, porta at euismod et, facilisis a massa. Aliquam erat volutpat. Nulla nec dui fringilla, interdum leo eu, venenatis diam. Quisque leo nulla, vehicula ac nisl id, scelerisque feugiat magna. Nam maximus accumsan lorem in pretium. Duis quis erat id sapien lacinia convallis. Donec sodales eros ac metus ultricies, nec finibus massa varius. Mauris a sapien nunc. Maecenas fringilla nibh orci, id viverra metus ornare sit amet. Phasellus vestibulum, lorem non luctus rutrum, tellus felis porta felis, non congue augue dui in metus. Nam vitae facilisis augue.</p>
+	<p>
+	Mauris aliquam rutrum facilisis. Nunc fermentum gravida mauris, sit amet malesuada orci placerat at. Aliquam ante metus, malesuada in dignissim vel, dictum ut urna. Sed ullamcorper gravida lacus non molestie. Donec finibus neque tempus tellus ultrices, ut tincidunt tellus fringilla. Nulla quis porta velit. Mauris placerat, sapien non viverra hendrerit, mi neque imperdiet felis, sed tempor libero ipsum feugiat justo.</p>
+	<p>
+	In sit amet sodales est, sed pellentesque odio. Ut in justo turpis. Vivamus cursus, dolor ac dictum consequat, urna lectus mollis lectus, quis vehicula sapien erat sed lectus. Sed rutrum tincidunt lectus, quis maximus felis molestie eget. Donec eu vehicula lorem. Pellentesque tortor orci, scelerisque et aliquam in, sodales sit amet libero. Donec non eros sed ex dignissim pharetra. Praesent at augue ac est condimentum dictum quis et quam. Morbi tortor risus, lacinia eget placerat in, convallis vel massa. Aenean rutrum ultricies lacus, sit amet ultrices dolor ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu sapien imperdiet, luctus enim eu, mattis lacus. Pellentesque gravida varius nibh et auctor. Praesent eget ligula sed velit placerat commodo. Nullam tempus magna in arcu viverra ornare.
+	</p>
+	<p>
+	Duis iaculis diam a mauris dapibus, varius varius velit aliquam. Duis scelerisque lorem vitae pharetra interdum. Mauris mollis orci ut odio posuere finibus. Sed varius in elit ac aliquam. Aenean et urna massa. Maecenas ultrices finibus sapien, in tristique leo bibendum ac. In quam mauris, venenatis ut diam at, convallis pretium nulla. Quisque et risus risus. Sed hendrerit congue leo, et euismod sem eleifend in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In in pretium orci, ut auctor orci. Phasellus porttitor metus scelerisque lacus ornare gravida. Morbi eu turpis ornare purus posuere imperdiet. Quisque id erat non orci vestibulum cursus. Praesent bibendum, purus vel sollicitudin porta, felis est convallis ligula, et tincidunt lacus neque sed leo.
+	</p>
+	<p>
+	Cras id lorem efficitur, placerat urna ac, dignissim tellus. Etiam semper justo a velit luctus, et auctor ex volutpat. Maecenas ultricies mollis augue sit amet bibendum. Phasellus elementum tellus leo, ac suscipit ex viverra vitae. Cras a neque sit amet odio placerat consectetur. Sed faucibus nunc at quam lacinia, nec gravida est vehicula. Mauris feugiat molestie justo vel fermentum. Nam placerat mauris urna, in euismod tortor congue in. Proin fermentum aliquet lectus, sed malesuada nisl aliquam sed.
+	</p>
+	<div>
+</section>
+<section id="work">
+	<h2>Work</h2>
+</section>
+<section id="history">
+	<h2>History</h2>
+</section>
+<section id="contact">
+	<h2>Contact</h2>
+</section>
+<footer></footer>
+
+<script>
+	window.onscroll = function() {myFunction()};
+	window.onclick = function(event) {
+    	if (event.target == navlist) {
+        	navlist.classList.remove("active")
+    	}
+	}
+
+	var navbar = document.getElementById("navbar");
+	var navlist = document.getElementById("navlist");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky");
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+
+	function openNav() {
+    	navlist.classList.add("active")
+	}
+	function closeNav() {
+    	navlist.classList.remove("active")
+	}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	      var hash = this.hash;
+	      $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){window.location.hash = hash;});
+	    } // End if
+	  });
+	});
+</script>
+</body>
+</html>
