@@ -194,6 +194,7 @@ section#contact{background:#333;color:azure;}
 }
 @media screen and (max-width: 767px) {
   #contact ul{columns: 1;}
+  #zomgchan {order:2;}
 }
 
 /* === Pepi Framework === */
