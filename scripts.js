@@ -1,4 +1,5 @@
 window.onscroll = function() {myFunction()};
+window.onreize = function() {updateSticky()};
 window.onclick = function(event) {
 	if (event.target == navlist) {
     	navlist.classList.remove("active")
@@ -7,9 +8,15 @@ window.onclick = function(event) {
 
 var navbar = document.getElementById("navbar");
 var navlist = document.getElementById("navlist");
-var sticky = navbar.offsetTop;
+var intro = document.getElementById("intro");
+var sticky = intro.offsetHeight;
+
+function updateSticky() {
+  var sticky = intro.offsetHeight;
+}
 
 function myFunction() {
+  var sticky = intro.offsetHeight;
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
