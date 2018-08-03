@@ -16,12 +16,13 @@
 </head>
 <body>
 <header id="intro">
+	<div id="muteYouTubeVideoPlayer"></div>
 	<div class="background"></div>
-	<div>
+	<div style="z-index: +1;">
 		<img src="img/ZOMG-icon.svg">
 		<img title="ZOMG Clan" src="img/ZOMG-typelogo.svg" style="width:64%;margin-top:-25px;">
 	</div>
-	<h1 style="text-align:center;">Stick Together, Team</h1>
+	<h1 style="z-index:+1;text-align:center;">Stick Together, Team</h1>
 </header>
 <nav id="navbar">
 	<span class="mobilelogo">
@@ -95,6 +96,36 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
+
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'fEdKl3MpgIU', // YouTube Video ID
+    width: 560,
+    height: 316,
+    playerVars: {
+    	rel: 0,
+    	autoplay: 1,
+    	controls: 0,
+    	showinfo: 0,
+    	modestbranding: 1,
+    	loop: 1,
+    	fs: 0,
+    	cc_load_policy: 0,
+    	iv_load_policy: 3,
+    	autohide: 0
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+
+</script>
 
 </body>
 </html>
