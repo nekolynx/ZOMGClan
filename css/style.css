@@ -131,10 +131,11 @@ li#logo{
   float: right;
 }
 
+#navlist{z-index: 99;}
+
 @media screen and (max-width: 600px) {
   #burger, .mobilelogo{display:inline-block;}
   li#logo{display:none;}
-  #navlist{z-index: 99;}
   nav ul{
     position:fixed;
     flex-direction: column;
@@ -150,7 +151,8 @@ li#logo{
   nav ul.active{
     visibility: visible;
     opacity: 1;
-    height:100%;
+    height:110%;
+    top:-10%;
   }
   nav li {
     font-weight: bold;
