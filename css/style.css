@@ -134,6 +134,7 @@ li#logo{
 @media screen and (max-width: 600px) {
   #burger, .mobilelogo{display:inline-block;}
   li#logo{display:none;}
+  #navlist{z-index: 99;}
   nav ul{
     position:fixed;
     flex-direction: column;
