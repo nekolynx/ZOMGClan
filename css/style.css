@@ -208,9 +208,9 @@ section:first-of-type{
   background: firebrick;
   color: aquamarine;
 }
-#about polygon{fill:brown;}
-section#work{background:brown;color:salmon;}
-section#history{background: brown;color: azure;}
+#about polygon{fill:#a62122;}
+section#work{background:#a62122;color:salmon;}
+section#history{background:#a62122;color: azure;}
 section#contact{background:#333;color:azure;}
 
 #timeline{
