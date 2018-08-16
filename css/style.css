@@ -2,6 +2,7 @@
 html{
   font-family: sans-serif;
   box-sizing: border-box;
+  background-color:#A62122;
 }
 img{max-width: 100%;}
 h1,h2,h3,h4,h5,h6{margin-bottom: 0.3em;line-height: 1em;}
@@ -74,6 +75,9 @@ header .background{
 @media (max-aspect-ratio: 16/9) {
   #muteYouTubeVideoPlayer { width: 300%; left: -100%; }
 }
+@media handheld, only screen and (max-device-width: 480px) {
+  #muteYouTubeVideoPlayer{display: none;}
+}
 
 nav{
   height: 64px;
@@ -89,7 +93,7 @@ nav{
     position: absolute;
     left: 0;
     bottom: -30px;
-    transform: scaleX(1.2);
+    transform: scaleX(1.7);
 }
 nav a{
   color: #fff;
