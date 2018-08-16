@@ -5,7 +5,7 @@ html{
 }
 img{max-width: 100%;}
 h1,h2,h3,h4,h5,h6{margin-bottom: 0.3em;line-height: 1em;}
-h1,h2 {font-family: 'utopia-std', sans-serif; font-style: italic;}
+h1 {font-family: 'utopia-std', sans-serif; font-style: italic;}
 h2 {font-size: 40pt;}
 h3 {font-weight: 600;text-transform: uppercase;letter-spacing: 1px;}
 p{
@@ -250,6 +250,8 @@ section#contact{background:#333;color:azure;}
     top: 19px;
     z-index: -1;
 }
+#timeline li:not(:first-of-type) {margin-top:-80px;}
+@media screen and (orientation:portrait) {#timeline li:not(:first-of-type) {margin-top:-60px;}}
 #timeline li:nth-of-type(odd) {
     margin-right: auto;
     direction: rtl;
