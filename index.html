@@ -15,16 +15,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/opl4nkd.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header id="intro">
 	<div id="muteYouTubeVideoPlayer"></div>
 	<div class="background"></div>
-	<div style="z-index: +1;">
+	<div style="z-index: +1;" data-aos="zoom-in-up">
 		<img src="img/ZOMG-icon.svg">
 		<img title="ZOMG Clan" src="img/ZOMG-typelogo.svg" style="width:64%;margin-top:-25px;">
 	</div>
-	<h1 style="z-index:+1;text-align:center;">Stick Together, Team</h1>
+	<h1 style="z-index:+1;text-align:center;"data-aos="fade-up" data-aos-delay="300">Stick Together, Team</h1>
 </header>
 <nav id="navbar">
 	<span class="mobilelogo">
@@ -41,10 +42,10 @@
 </nav>
 <section id="about">
 	<div class="ps_row" style="padding-bottom: 0;">
-		<div id="zomgchan" class="ps_col-sm-6" style="text-align: right;">
+		<div id="zomgchan" class="ps_col-sm-6" style="text-align: right;" data-aos="fade-right">
 			<img src="img/ZOMGchan2018.png" />
 		</div>
-		<div class="ps_col-lg-6">
+		<div class="ps_col-lg-6" data-aos="fade-up">
 			<h2>Who We Are</h2>
 			<span>/zɒ·maɪ·ɡɑːd/ /klæn/</span>
 			<p>ZOMG Clan is collective of multi-talented individuals. Our interests are wide and varied. Our background is in gaming; what started as a Counterstrike Source clan has evolved to much more. And by that we mean a very facetious organization of trolls and cynics.</p>
@@ -57,13 +58,13 @@
 <section id="work">
 	<div class="ps_row">
 		<div class="ps_col-lg-12"><h2>Work</h2></div>
-		<div class="ps_col-sm-4">
+		<div class="ps_col-sm-4" data-aos="flip-left" data-aos-delay="0" >
 			<img src="http://via.placeholder.com/400x400" />
 		</div>
-		<div class="ps_col-sm-4">
+		<div class="ps_col-sm-4" data-aos="flip-left" data-aos-delay="150" >
 			<img src="http://via.placeholder.com/400x400" />
 		</div>
-		<div class="ps_col-sm-4">
+		<div class="ps_col-sm-4" data-aos="flip-left" data-aos-delay="300" >
 			<img src="http://via.placeholder.com/400x400" />
 		</div>
 	</div>
@@ -73,7 +74,7 @@
 		<div class="ps_col-lg-12">
 			<h2>History</h2>
 		</div>
-		<div class="ps_col-lg-7" style="order:0;"">
+		<div class="ps_col-lg-7" style="order:0;"" data-aos="fade-up">
 			<ul id="timeline">
 				<li><h3><em>Early </em>2008</h3><img src="img/ZOMG-oldlogo-1.png"/></li>
 				<li><h3><em>Late </em>2008</h3><img src="img/ZOMG-oldlogo-2.png"/></li>
@@ -83,15 +84,15 @@
 				<li><h3>2018</h3><img src="img/ZOMG-newlogo-6.jpg"/></li>
 			</ul>
 		</div>
-		<div class="ps_col-md-5">
+		<div class="ps_col-md-5" data-aos="fade-up" data-aos-delay="150">
 			<p style="text-align:justify">ZOMG Clan's origins are in gaming, created during an era of Counter Strike 1337 speak. Troughout the years we tried our hands at tournaments, starting a gaming review site, and even humoring the idea of opening gaming café chain. As we grew older, our interests diversified to outside of gaming, however we kept in touch using the dated old clan tag. Thus we reserved this moniker and domain just in case we want to do anything with it in the future. </p>
 		</div>
 	</div>
 </section>
 <section id="contact">
 	<div class="ps_row">
-		<div class="ps_col-lg-3"><h2 style="text-align:right;">Follow Us</h2></div>
-		<div class="ps_col-lg-9">
+		<div class="ps_col-lg-3" data-aos="fade-right" data-aos-delay="0" data-aos-duration data-aos-easing="ease-in"><h2 style="text-align:right;">Follow Us</h2></div>
+		<div class="ps_col-lg-9" data-aos="fade-right" data-aos-delay="400" data-aos-duration data-aos-easing="ease-out">
 			<ul>
 				<li><a href="https://www.facebook.com/ZOMGClan/"><i class="fab fa-facebook"></i><span>The Facebooks</span></a></li>
 				<li><a href="https://twitter.com/zomgclan"><i class="fab fa-twitter"></i><span>Once-in-a-long-while Tweets</span></a></li>
@@ -136,6 +137,12 @@
  }
 
 </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 </body>
 </html>
