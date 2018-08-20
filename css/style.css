@@ -248,6 +248,7 @@ section#contact{background:#333;color:azure;}
     list-style-position: outside;
 }
 @media (-webkit-min-device-pixel-ratio: 1) { #timeline li {width: calc(50% - 10pt);} }
+@media (-webkit-min-device-pixel-ratio: 2) { #timeline li {width: calc(50% - 8pt);} }
 #timeline li:before {
     content: '';
     display: inline-block;
