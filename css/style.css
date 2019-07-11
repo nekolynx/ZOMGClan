@@ -96,7 +96,8 @@ nav{
     position: absolute;
     left: 0;
     bottom: -30px;
-    transform: scaleX(1.7);
+    -webkit-transform: scaleX(1.7);
+            transform: scaleX(1.7);
 }
 nav a{
   color: #fff;
@@ -256,7 +257,8 @@ section#contact{background:#333;color:azure;}
     background: #ed1c25;
     width: 15px;
     height: 15px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 19px;
     z-index: -1;
 }
@@ -293,15 +295,25 @@ section#contact{background:#333;color:azure;}
 #contact ul{
   padding:0;
   list-style-type: none;
-  columns: 2;
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
   font-size: 16pt;
 }
 @media screen and (max-width: 767px) {
-  #contact ul{columns: 1;}
+  #contact ul{-webkit-columns: 1;-moz-columns: 1;columns: 1;}
   #zomgchan {order:2;}
 }
 
 /* === Pepi Framework === */
+.m-0 {margin:  0 !important;}
+.mx-0{margin-left:  0 !important; margin-right:   0 !important}
+.my-0{margin-top:   0 !important; margin-bottom:  0 !important}
+.p-0 {padding: 0 !important;}
+.px-0{padding-left: 0 !important; padding-right:  0 !important}
+.py-0{padding-top:  0 !important; padding-bottom: 0 !important}
+.px-1{padding-left: 15px; padding-right:  15px}
+.py-1{padding-top:  15px; padding-bottom: 15px}
 .ps_row {
   position: relative;
   display:flex;
